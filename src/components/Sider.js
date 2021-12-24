@@ -3,10 +3,13 @@ import { Button, Layout } from "antd"
 import { Link, Route, Switch } from 'react-router-dom'
 import SiderEmployee from './item/SiderEmployee'
 import SiderAccount from './item/SiderAccount';
+import { useRouteMatch } from 'react-router-dom';
 
 const {Sider} = Layout
 
 const MySider = (props) => {
+    let { url } = useRouteMatch();
+
     return (
         <div>
             <Sider style={{ height: "100vh", color: "white" }}>
@@ -18,7 +21,7 @@ const MySider = (props) => {
                         <SiderAccount/>
                     </Route>
                 </Switch>
-                <Link to="/setting">
+                <Link to={"/setting"}>
                     <Button>
                         Setting
                     </Button>

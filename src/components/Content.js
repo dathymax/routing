@@ -6,10 +6,13 @@ import ContentCreateEmployee from './item/ContentCreateEmployee';
 import ContentSettingEmployee from './item/ContentSettingEmployee';
 import ContentCreateAccount from './item/ContentCreateAccount';
 import ContentListAccount from './item/ContentListAccount';
+import { useRouteMatch } from 'react-router-dom';
 
 const {Content} = Layout
 
 const MyContent = () => {
+    let { path } = useRouteMatch();
+
     return (
         <Content style={{ height: "100vh", color: "black" }}>
             <Switch>
@@ -24,7 +27,7 @@ const MyContent = () => {
                 </Route>
 
                 
-                
+
                 <Route path="/account/list-account">
                     <ContentListAccount />
                 </Route>
