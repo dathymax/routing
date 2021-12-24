@@ -2,18 +2,16 @@ import { Menu } from 'antd'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const SiderEmployee = (props) => {
+const SiderSettingEmployee = (props) => {
     return (
-        <div>
-            <Menu>
-                <Menu.Item>
-                    <Link to="/employee/setting">
-                        Setting Employee
-                    </Link>
-                </Menu.Item>
-            </Menu>
-        </div>
+        <Menu>
+            <Menu.Item>
+                <Link to="/setting/setting-employee">
+                    Setting Employee
+                </Link>
+            </Menu.Item>
+        </Menu>
     )
 }
 
-export default SiderEmployee
+export default SiderSettingEmployee

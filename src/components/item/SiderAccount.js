@@ -1,17 +1,17 @@
+import { Menu } from 'antd'
 import React from 'react'
-import { Menu } from "antd"
 import { Link } from 'react-router-dom'
 
-const SiderEmployee = () => {
+const SiderAccount = () => {
     return (
         <Menu>
             <Menu.Item>
-                <Link to="/employee/list-employee">
+                <Link to="/account/list-account">
                     List
                 </Link>
             </Menu.Item>
             <Menu.Item>
-                <Link to="/employee/create-employee">
+                <Link to="/account/create-account">
                     Create
                 </Link>
             </Menu.Item>
@@ -19,4 +19,4 @@ const SiderEmployee = () => {
     )
 }
 
-export default SiderEmployee
+export default SiderAccount

@@ -2,9 +2,9 @@ import { Layout } from 'antd';
 import { BrowserRouter as Router } from 'react-router-dom';
 import MyContent from './components/Content';
 import MyHeader from './components/Header';
-import SiderSetting from './components/item/SettingEmployee';
 import MySider from './components/Sider';
-import logo from './logo.svg';
+import './App.css';
+import MySettingSider from './components/SettingSider';
 
 function App() {
     return (
@@ -14,7 +14,7 @@ function App() {
                     <MyHeader />
                     <Layout>
                         <MySider />
-                        <SiderSetting />
+                        <MySettingSider id="sider-setting"/>
                         <MyContent/>
                     </Layout>
                 </Layout>

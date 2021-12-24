@@ -10,6 +10,9 @@ const MyHeader = () => {
             <Link to={"/employee"}>
                 This is Employee
             </Link>
+            <Link to={"/account"}>
+                This is Account
+            </Link>
         </Header>
     )
 }

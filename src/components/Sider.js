@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Layout } from "antd"
 import { Link, Route, Switch } from 'react-router-dom'
 import SiderEmployee from './item/SiderEmployee'
-import SiderSetting from './item/SettingEmployee'
+import SiderAccount from './item/SiderAccount';
 
 const {Sider} = Layout
 
@@ -14,9 +14,12 @@ const MySider = (props) => {
                     <Route path={"/employee"}>
                         <SiderEmployee/>
                     </Route>
+                    <Route path={"/account"}>
+                        <SiderAccount/>
+                    </Route>
                 </Switch>
-                <Link to="setting">
-                    <Button id={props.id}>
+                <Link to="/setting">
+                    <Button>
                         Setting
                     </Button>
                 </Link>
