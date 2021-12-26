@@ -13,26 +13,25 @@ const { Content } = Layout;
 
 const MyContent = (props) => {
 	return (
-		<Content style={{ height: "100vh", color: "black" }}>
-			<Switch>
-				<Route path="/employee/list-employee">
-					<ContentListEmployee />
-				</Route>
-				<Route path="/employee/create-employee">
-					<ContentCreateEmployee />
-				</Route>
+		<div id={props.id}>
+			<Content style={{ height: "100vh", color: "black" }}>
+				<Switch>
+					<Route path="/employee/list-employee">
+						<ContentListEmployee />
+					</Route>
+					<Route path="/employee/create-employee">
+						<ContentCreateEmployee />
+					</Route>
 
-				<Route path="/account/list-account">
-					<ContentListAccount />
-				</Route>
-				<Route path="/account/create-account">
-					<ContentCreateAccount />
-				</Route>
-				<Route path={props.path + "/setting"}>
-					<ContentSetting path={props.path} />
-				</Route>
-			</Switch>
-		</Content>
+					<Route path="/account/list-account">
+						<ContentListAccount />
+					</Route>
+					<Route path="/account/create-account">
+						<ContentCreateAccount />
+					</Route>
+				</Switch>
+			</Content>
+		</div>
 	);
 };
 

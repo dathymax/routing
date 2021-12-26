@@ -9,7 +9,7 @@ const { Sider } = Layout;
 
 const MySider = (props) => {
 	return (
-		<div>
+		<div id={props.id}>
 			<Sider style={{ height: "100vh", color: "white" }}>
 				<Switch>
 					<Route path={"/employee/"}>
@@ -19,7 +19,7 @@ const MySider = (props) => {
 						<SiderAccount />
 					</Route>
 				</Switch>
-				<Link to={props.path + "/setting/"}>Setting</Link>
+				<Button onClick={props.onShowContentSetting}>Setting</Button>
 			</Sider>
 		</div>
 	);

@@ -17,7 +17,7 @@ const MySettingSider = (props) => {
 					borderRight: "1px solid #000",
 				}}
 			>
-				<SiderSettingEmployee path={props.path} />
+				<SiderSettingEmployee path={"/setting"} />
 			</Sider>
 		</div>
 	);
